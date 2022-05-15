@@ -78,8 +78,6 @@ object Depends {
             "androidx.core:core-ktx:${Versions.coreKtxVersion}"
         const val paging_runtime_ktx =
             "androidx.paging:paging-runtime-ktx:${Versions.pagingVersion}"
-        const val paging_rx =
-            "androidx.paging:paging-rxjava3:${Versions.pagingVersion}"
         const val java_inject = "javax.inject:javax.inject:${Versions.javaxInjectVersion}"
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit2Version}"
         const val retrofit_adapter_rx =
