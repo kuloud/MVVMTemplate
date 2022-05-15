@@ -12,10 +12,6 @@ object Depends {
         const val minSdkVersion = 21
         const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         const val kotlinVersion = "1.6.21"
-        const val rxKotlinVersion = "3.0.1"
-        const val rxAndroidVersion = "3.0.0"
-        const val rxJavaVersion = "3.1.4"
-        const val rxBinding = "4.0.0"
         const val retrofit2Version = "2.9.0"
         const val okhttpLoggingVersion = "5.0.0-alpha.6"
         const val chuckerVersion = "3.5.2"
@@ -109,8 +105,6 @@ object Depends {
         const val mockk = "io.mockk:mockk:${Versions.mockkVersion}"
         const val arch_core_testing =
             "androidx.arch.core:core-testing:${Versions.archCoreTestingVersion}"
-        const val rx_kotlin = "io.reactivex.rxjava3:rxkotlin:${Versions.rxKotlinVersion}"
-        const val rx_java = "io.reactivex.rxjava3:rxjava:${Versions.rxJavaVersion}"
         const val lifecycle_livedata =
             "androidx.lifecycle:lifecycle-livedata:${Versions.lifecycleVersion}"
         const val constraintlayout =
@@ -129,16 +123,9 @@ object Depends {
             "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
         const val recyclerview =
             "androidx.recyclerview:recyclerview:${Versions.recyclerviewVersion}"
-        const val rx_java_android = "io.reactivex.rxjava3:rxandroid:${Versions.rxAndroidVersion}"
-        const val rx_binding3 = "com.jakewharton.rxbinding4:rxbinding:${Versions.rxBinding}"
         const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
         const val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
         const val lottie = "com.airbnb.android:lottie:${Versions.lottieVersion}"
-        const val autodispose = "com.uber.autodispose2:autodispose:${Versions.autoDispose}"
-        const val autodispose_android =
-            "com.uber.autodispose2:autodispose-android:${Versions.autoDispose}"
-        const val autodispose_android_arch =
-            "com.uber.autodispose2:autodispose-androidx-lifecycle:${Versions.autoDispose}"
         const val leak_canary =
             "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanaryVersion}"
         const val chucker = "com.github.chuckerteam.chucker:library:${Versions.chuckerVersion}"

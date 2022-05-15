@@ -25,11 +25,6 @@
             android:id="@+id/navigateToProductDetailFragment"
             app:destination="@id/productDetailFragment" />
 
-        <argument
-            android:name="choosePathType"
-            android:defaultValue="RX"
-            app:argType="app.web.drjackycv.presentation.products.choose.ChoosePathType" />
-
     </fragment>
 
     <fragment

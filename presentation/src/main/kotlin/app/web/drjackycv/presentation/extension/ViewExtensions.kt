@@ -9,16 +9,11 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.app.ActivityCompat.startPostponedEnterTransition
 import app.web.drjackycv.presentation.R
 import app.web.drjackycv.presentation.base.util.GlideApp
-import app.web.drjackycv.presentation.exception.ReactiveClickException
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
-import com.jakewharton.rxbinding4.view.clicks
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.disposables.Disposable
-import java.util.concurrent.TimeUnit
 
 fun View?.gone() {
     this?.let {
@@ -79,16 +74,3 @@ fun ImageView.load(
     glideRequest.into(this)
 }
 
-fun View.setOnReactiveClickListener(windowDuration: Long = 500, action: (() -> Unit)?): Disposable =
-    this.clicks()
-        .throttleFirst(windowDuration, TimeUnit.MILLISECONDS)
-        .observeOn(AndroidSchedulers.mainThread())
-        .subscribe({
-            action?.invoke()
-        }, { throwable ->
-            throw ReactiveClickException(
-                msg = throwable.message ?: "Unknown Reactive Click Exception!",
-                cause = throwable.cause,
-                stack = throwable.stackTrace
-            )
-        })

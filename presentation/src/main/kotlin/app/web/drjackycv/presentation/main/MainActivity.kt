@@ -8,11 +8,9 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import app.web.drjackycv.domain.extension.allowReads
 import app.web.drjackycv.presentation.R
-import app.web.drjackycv.presentation.base.preference.Settings
 import app.web.drjackycv.presentation.databinding.ActivityMainBinding
 import app.web.drjackycv.presentation.datastore.DataStoreManager
 import app.web.drjackycv.presentation.extension.collectIn
-import app.web.drjackycv.presentation.extension.setOnReactiveClickListener
 import app.web.drjackycv.presentation.extension.viewInflateBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
@@ -80,21 +78,12 @@ class MainActivity : AppCompatActivity() {
         when (mode) {
             AppCompatDelegate.MODE_NIGHT_NO -> {
                 binding.activityMainSwitchThemeFab.setImageResource(R.drawable.ic_mode_night_no_black)
-                binding.activityMainSwitchThemeFab.setOnReactiveClickListener {
-                    setNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                }
             }
             AppCompatDelegate.MODE_NIGHT_YES -> {
                 binding.activityMainSwitchThemeFab.setImageResource(R.drawable.ic_mode_night_yes_black)
-                binding.activityMainSwitchThemeFab.setOnReactiveClickListener {
-                    setNightMode(Settings.MODE_NIGHT_DEFAULT)
-                }
             }
             else -> {
                 binding.activityMainSwitchThemeFab.setImageResource(R.drawable.ic_mode_night_default_black)
-                binding.activityMainSwitchThemeFab.setOnReactiveClickListener {
-                    setNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                }
             }
         }
         if (AppCompatDelegate.getDefaultNightMode() != mode)

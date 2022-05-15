@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import androidx.paging.PagingData
@@ -18,12 +17,10 @@ import app.web.drjackycv.presentation.base.adapter.LoadingStateAdapter
 import app.web.drjackycv.presentation.base.adapter.RecyclerItem
 import app.web.drjackycv.presentation.databinding.FragmentProductListBinding
 import app.web.drjackycv.presentation.extension.*
-import app.web.drjackycv.presentation.products.choose.ChoosePathType
 import app.web.drjackycv.presentation.products.entity.BeerUI
 import com.google.android.material.transition.platform.Hold
 import com.google.android.material.transition.platform.MaterialElevationScale
 import dagger.hilt.android.AndroidEntryPoint
-import timber.log.Timber
 
 @AndroidEntryPoint
 class ProductsListFragment : Fragment(R.layout.fragment_product_list) {
@@ -32,7 +29,6 @@ class ProductsListFragment : Fragment(R.layout.fragment_product_list) {
         cleanUp(it)
     }
     private val productsListViewModel: ProductsListViewModel by viewModels()
-    private var path = ChoosePathType.RX
 
     private val productsListAdapter: ProductsListAdapter by lazy {
         ProductsListAdapter(::navigateToProductDetail)
@@ -49,10 +45,7 @@ class ProductsListFragment : Fragment(R.layout.fragment_product_list) {
     }
 
     private fun setupPath() {
-        val safeArgs: ProductsListFragmentArgs by navArgs()
-        path = safeArgs.choosePathType
-        Timber.d("Which path: $path")
-        setupViewBaseOnPath()
+        setupViewByCoroutine()
     }
 
     private fun setupRecycler() {
@@ -65,29 +58,6 @@ class ProductsListFragment : Fragment(R.layout.fragment_product_list) {
         //productListRecyclerView.itemAnimator = null
         postponeEnterTransition()
         view?.doOnPreDraw { startPostponedEnterTransition() }
-    }
-
-    private fun setupViewBaseOnPath() {
-        when (path) {
-            ChoosePathType.RX -> {
-                setupView()
-            }
-            ChoosePathType.COROUTINE -> {
-                setupViewByCoroutine()
-            }
-        }
-    }
-
-    private fun setupView() {
-        productsListViewModel.run {
-
-            viewLifecycleOwner.observe(ldProductsList, ::addProductsList)
-
-            failure.collectIn(viewLifecycleOwner) {
-                handleFailure(it)
-            }
-
-        }
     }
 
     private fun setupViewByCoroutine() {
