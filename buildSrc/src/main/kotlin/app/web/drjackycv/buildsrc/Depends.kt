@@ -6,12 +6,12 @@ object Depends {
 
     object Versions {
         const val appVersionCode = 1_000_000
-        const val gradleVersion = "7.3.0-alpha07"
-        const val androidCompileSdkVersion = 31
-        const val targetSdkVersion = 31
+        const val gradleVersion = "7.2.0"
+        const val androidCompileSdkVersion = 32
+        const val targetSdkVersion = 32
         const val minSdkVersion = 21
         const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        const val kotlinVersion = "1.6.20"
+        const val kotlinVersion = "1.6.21"
         const val rxKotlinVersion = "3.0.1"
         const val rxAndroidVersion = "3.0.0"
         const val rxJavaVersion = "3.1.4"
@@ -48,11 +48,6 @@ object Depends {
         const val supportTestVersion = "1.4.0"
         const val testCoreVersion = "1.4.0"
         const val testExtJunitVersion = "1.1.3"
-        const val sonarqubeVersion = "3.3"
-        const val detektVersion = "1.19.0"
-        const val checkDependencyVersionsVersion = "0.42.0"
-        const val gradleDoctorVersion = "0.8.0"
-        const val dependencyAnalysisVersion = "1.0.0"
         const val leakCanaryVersion = "2.8.1"
         const val coroutinesTestVersion = "1.6.0"
         const val mockkVersion = "1.12.2"
@@ -67,10 +62,6 @@ object Depends {
 
         const val hilt_android_gradle_plugin =
             "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
-        const val sonarqube_gradle_plugin =
-            "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:${Versions.sonarqubeVersion}"
-        const val detekt_gradle_plugin =
-            "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.detektVersion}"
     }
 
     object Libraries {

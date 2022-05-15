@@ -8,10 +8,8 @@ A simple Android template that lets you create an **Android** project quickly.
 
 ## How to use 👣
 
-Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/Drjacky/MVVMTemplate/generate) button to create a new repo starting from this template.
+Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/kuloud/MVVMTemplate/generate) button to create a new repo starting from this template.
 
-## Compose version ⭐
-For the compose version, which is under development, switch to [feature/compose](https://github.com/Drjacky/MVVMTemplate/tree/feature/compose) branch.
 
 ## Features 🕹
 
@@ -36,7 +34,6 @@ For the compose version, which is under development, switch to [feature/compose]
 - [Material Components](https://github.com/material-components/material-components-android) - Material Design
 - [Lottie](https://airbnb.design/lottie/) - Vector animation library
 - [Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html) - Alternative syntax to the Groovy DSL
-- [Detekt](https://github.com/detekt/detekt) - Static code analysis for Kotlin
 - [Gradle Doctor](https://github.com/runningcode/gradle-doctor) - Gradle build scan plugin
 - [Navigation](https://developer.android.com/guide/navigation) - Navigate through the app
 - [LeakCanary](https://square.github.io/leakcanary/) - Memory leak detection
@@ -48,20 +45,7 @@ For the compose version, which is under development, switch to [feature/compose]
 
 ## Under Development 🚧
 
-- ~~Add CI~~
-- ~~Use Kotlin DSL~~
-- Add Espresso, Instrumentation & Unit tests. To see a part of changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/18).
-- ~~Use Animations. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/commit/2fc51ef6ff82c4d43168e3ae0124a30c4ec3bfff).~~
-- ~~Use Hilt. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/commit/b8af89bb74e5d615e9704c9f3ce35befd11811ea).~~
-- ~~Migrate to [Hilt 2.31](https://github.com/google/dagger/releases/tag/dagger-2.31). To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/commit/792d2ba54d214b3ef10862777fc386e7be5790f4).~~
-- ~~Use Paging V3. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/4/files).~~
-- ~~Use ViewBinding. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/commit/cfc907532fa991cd8de3b295644bfdff88d67ceb).~~
-- Migrate to [JetPack Compose](https://developer.android.com/jetpack/compose)
-- ~~Use detekt. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/6/files).~~
-- ~~Add coroutines and flow. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/7/files).~~
-- ~~Replace Preferences by DataStore. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/commit/285892ce098e2a069324910a213b78cac2e643e8).~~
-- ~~Migrate from RxJava 2 to RxJava 3. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/11).~~
-- ~~Add Custom Rx Adapter for Network Response Handling. To see changes, click [here](https://github.com/Drjacky/MVVMTemplate/pull/13/files).~~
+
 
 ## CI 🏭
 
@@ -74,9 +58,6 @@ Available workflows listed as follows:
 
 ## Tasks 🔧
 
-- Gradle Doctor: `dependencyUpdates` -  Displays the dependency updates for the project.
-- Detekt: `detektAll` - Run the static Kotlin code analysis for the whole project at once.
-- The Dependency Analysis: `buildHealth` - Provides advice for managing dependencies and other applied plugins
 
 ## References 🧷
 
@@ -89,9 +70,7 @@ Available workflows listed as follows:
 Feel free to open an issue or submit a pull request for any bugs/improvements.
 
 ## Result 📺
-<img src="https://raw.githubusercontent.com/Drjacky/MVVMTemplate/master/gif/path.gif" width="350px" height="700px" /> <img src="https://raw.githubusercontent.com/Drjacky/MVVMTemplate/master/gif/list.gif" width="350px" height="700px" />
-### Compose
-<img src="https://raw.githubusercontent.com/Drjacky/MVVMTemplate/master/gif/compose.gif" width="350px" height="700px" />
+
 
 ## License ⚖️
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDrjacky%2FMVVMTemplate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDrjacky%2FMVVMTemplate?ref=badge_large)
