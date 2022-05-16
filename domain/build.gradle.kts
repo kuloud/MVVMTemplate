@@ -43,6 +43,10 @@ android {
         }
     }
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
 }
 
 val unitTestImplementation: Configuration by configurations.creating

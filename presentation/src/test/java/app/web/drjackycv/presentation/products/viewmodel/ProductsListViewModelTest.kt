@@ -5,7 +5,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.asLiveData
 import androidx.paging.PagingData
-import app.web.drjackycv.domain.products.entity.Beer
 import app.web.drjackycv.domain.products.factory.ProductFactory
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineParams
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineUseCase

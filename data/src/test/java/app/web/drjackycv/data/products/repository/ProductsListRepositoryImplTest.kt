@@ -59,8 +59,7 @@ class ProductsListRepositoryImplTest {
             val productsApi = mockk<ProductsApi> {
                 coEvery { getBeersListByCoroutine() } returns givenProducts
             }
-            productsListRepositoryImpl =
-                ProductsListRepositoryImpl(pagingSourceByCoroutine)
+            productsListRepositoryImpl = ProductsListRepositoryImpl(pagingSourceByCoroutine)
             val pagingSource = PagingData.from(givenProducts)
 
             // When

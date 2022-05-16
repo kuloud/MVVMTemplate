@@ -55,14 +55,19 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
-    lintOptions {
-        isAbortOnError = false
-    }
     //testOptions.unitTests.returnDefaultValues = true
     packagingOptions {
         exclude("META-INF/rxjava.properties")
         exclude("META-INF/proguard/androidx-annotations.pro")
     }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+//
+//    fun Lint.() {
+//        abortOnError = false
+//        baseline = file("lint-baseline.xml")
+//    }
 }
 
 tasks.withType<KotlinCompile> {

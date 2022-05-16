@@ -1,7 +1,7 @@
 # MVVMTemplate 🧞‍
 
 ![Language](https://img.shields.io/badge/Kotlin-1.6.21-blue) 
-![License](https://img.shields.io/github/license/kuloud/MVVMTemplate?logo=MIT)
+![License](https://img.shields.io/github/license/kuloud/MVVMTemplate)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![Actions Status](https://github.com/kuloud/MVVMTemplate/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/kuloud/MVVMTemplate/actions) 
 [![Build Status](https://github.com/kuloud/MVVMTemplate/workflows/Android%20CI/badge.svg)](https://github.com/kuloud/MVVMTemplate/actions) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kuloud_MVVMTemplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=kuloud_MVVMTemplate)
