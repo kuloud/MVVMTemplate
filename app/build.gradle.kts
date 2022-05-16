@@ -10,13 +10,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Depends.Versions.androidCompileSdkVersion)
+    compileSdk = Depends.Versions.androidCompileSdkVersion
 
     defaultConfig {
         multiDexEnabled = true
         applicationId = "app.web.drjackycv.mvvmtemplate"
-        minSdkVersion(Depends.Versions.minSdkVersion)
-        targetSdkVersion(Depends.Versions.targetSdkVersion)
+        minSdk = Depends.Versions.minSdkVersion
+        targetSdk = Depends.Versions.targetSdkVersion
         versionCode = Depends.Versions.appVersionCode
         versionName = Depends.generateVersionName()
         testInstrumentationRunner =
@@ -88,7 +88,6 @@ dependencies {
     implementation(Depends.Libraries.java_inject)
     //network
     implementation(Depends.Libraries.retrofit)
-    implementation(Depends.Libraries.retrofit_adapter_rx)
     implementation(Depends.Libraries.logging_interceptor)
     //other
     implementation(Depends.Libraries.timber)

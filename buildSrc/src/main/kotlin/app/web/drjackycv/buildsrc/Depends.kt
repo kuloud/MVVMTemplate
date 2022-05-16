@@ -27,12 +27,10 @@ object Depends {
         const val recyclerviewVersion = "1.3.0-alpha02"
         const val hiltVersion = "2.40.1"
         const val hiltCompilerVersion = "1.0.0"
-        const val hiltNavigationComposeVersion = "1.0.0-alpha03"
         const val javaxInjectVersion = "1"
         const val timberVersion = "5.0.1"
         const val lottieVersion = "4.2.2"
         const val glideVersion = "4.13.1"
-        const val autoDispose = "2.1.1"
         const val dataStorePreferenceVersion = "1.0.0"
 
         const val mockitoKotlinVersion = "2.2.0"
@@ -79,8 +77,6 @@ object Depends {
             "androidx.paging:paging-runtime-ktx:${Versions.pagingVersion}"
         const val java_inject = "javax.inject:javax.inject:${Versions.javaxInjectVersion}"
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit2Version}"
-        const val retrofit_adapter_rx =
-            "com.squareup.retrofit2:adapter-rxjava3:${Versions.retrofit2Version}"
         const val logging_interceptor =
             "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLoggingVersion}"
         const val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"

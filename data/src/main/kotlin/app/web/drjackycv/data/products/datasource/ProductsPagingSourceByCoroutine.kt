@@ -6,7 +6,6 @@ import app.web.drjackycv.data.products.entity.BeerMapper
 import app.web.drjackycv.data.products.remote.ProductsApi
 import app.web.drjackycv.domain.base.Failure
 import app.web.drjackycv.domain.products.entity.Beer
-import io.reactivex.rxjava3.annotations.NonNull
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 import java.util.concurrent.TimeoutException
@@ -59,7 +58,7 @@ class ProductsPagingSourceByCoroutine @Inject constructor(
     override fun getRefreshKey(state: PagingState<Int, Beer>): Int? = state.anchorPosition
 
     private fun toLoadResult(
-        @NonNull response: List<Beer>,
+        response: List<Beer>,
         position: Int,
     ): LoadResult<Int, Beer> {
         return LoadResult.Page(

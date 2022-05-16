@@ -7,7 +7,6 @@ import app.web.drjackycv.data.products.datasource.ProductsPagingSourceByCoroutin
 import app.web.drjackycv.domain.extension.allowReads
 import app.web.drjackycv.domain.products.entity.Beer
 import app.web.drjackycv.domain.products.repository.ProductsListRepository
-import io.reactivex.rxjava3.core.Flowable
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton
