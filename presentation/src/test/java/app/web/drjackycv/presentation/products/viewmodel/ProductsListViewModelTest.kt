@@ -61,7 +61,7 @@ class ProductsListViewModelTest {
         runTest {
             // Given
             val givenProducts = ProductFactory.createProducts(3)
-            val flow = flow<PagingData<Beer>> {
+            val flow = flow {
 //                emit(LoadState.Loading)
                 delay(10)
                 emit(PagingData.from(givenProducts))

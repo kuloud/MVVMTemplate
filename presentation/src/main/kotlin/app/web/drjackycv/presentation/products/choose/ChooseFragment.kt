@@ -7,7 +7,6 @@ import androidx.navigation.fragment.findNavController
 import app.web.drjackycv.presentation.R
 import app.web.drjackycv.presentation.databinding.FragmentChooseBinding
 import app.web.drjackycv.presentation.extension.viewBinding
-import java.io.Serializable
 
 class ChooseFragment : Fragment(R.layout.fragment_choose) {
 

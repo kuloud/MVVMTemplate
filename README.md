@@ -1,10 +1,15 @@
 # MVVMTemplate 🧞‍
 
-![Language](https://img.shields.io/badge/Kotlin-1.6.21-blue) ![License](https://img.shields.io/github/license/Drjacky/MVVMTemplate?logo=MIT) [![Actions Status](https://github.com/Drjacky/MVVMTemplate/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/Drjacky/MVVMTemplate/actions) [![Build Status](https://github.com/Drjacky/MVVMTemplate/workflows/Android%20CI/badge.svg)](https://github.com/Drjacky/MVVMTemplate/actions) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Drjacky_MVVMTemplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=Drjacky_MVVMTemplate)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDrjacky%2FMVVMTemplate.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDrjacky%2FMVVMTemplate?ref=badge_shield)
+![Language](https://img.shields.io/badge/Kotlin-1.6.21-blue) 
+![License](https://img.shields.io/github/license/kuloud/MVVMTemplate?logo=MIT)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
+[![Actions Status](https://github.com/kuloud/MVVMTemplate/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/kuloud/MVVMTemplate/actions) 
+[![Build Status](https://github.com/kuloud/MVVMTemplate/workflows/Android%20CI/badge.svg)](https://github.com/kuloud/MVVMTemplate/actions) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kuloud_MVVMTemplate&metric=alert_status)](https://sonarcloud.io/dashboard?id=kuloud_MVVMTemplate)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkuloud%2FMVVMTemplate.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkuloud%2FMVVMTemplate?ref=badge_shield)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MVVMTemplate-green.svg?style=flat)](https://android-arsenal.com/details/1/8368)
-<!-- [![Known Vulnerabilities](https://snyk.io/test/github/Drjacky/MVVMTemplate/badge.svg)](https://snyk.io/test/github/Drjacky/MVVMTemplate) Snyk doesn't support kotlin dsl -->
-A simple Android template that lets you create an **Android** project quickly. 
+
+
+[comment]: <> (![]&#40;https://raw.githubusercontent.com/kuloud/fly-img/main/img/20220516113127.png&#41;)
 
 ## How to use 👣
 
@@ -35,7 +40,6 @@ Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20t
 - [Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html) - Alternative syntax to the Groovy DSL
 - [Navigation](https://developer.android.com/guide/navigation) - Navigate through the app
 - [LeakCanary](https://square.github.io/leakcanary/) - Memory leak detection
-- [Chucker](https://github.com/ChuckerTeam/chucker) - An HTTP inspector for Android & OkHTTP
 - [StrictMode](https://developer.android.com/reference/android/os/StrictMode) - A developer tool which detects things you might be doing by accident
 - [Dark/Light Theme](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme) - Support dark/light themes
 - [DataStore](https://developer.android.com/topic/libraries/architecture/datastore) - Data storage solution that allows you to store key-value pairs or typed objects
@@ -46,7 +50,7 @@ Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20t
 
 ## CI 🏭
 
-This template is using [**GitHub Actions**](https://github.com/Drjacky/MVVMTemplate/actions) as CI.
+This template is using [**GitHub Actions**](https://github.com/kuloud/MVVMTemplate/actions) as CI.
 
 Available workflows listed as follows:
 - [Validate Gradle Wrapper](.github/workflows/gradlew-validation.yml) - Checks the gradle wrapper has a valid checksum.

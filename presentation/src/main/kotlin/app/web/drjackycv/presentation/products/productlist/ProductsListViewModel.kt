@@ -19,8 +19,6 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-const val CHOOSE_PATH_TYPE = "choosePathType"
-
 @HiltViewModel
 class ProductsListViewModel @Inject constructor(
     private val getBeersListByCoroutineUseCase: GetBeersListByCoroutineUseCase,
