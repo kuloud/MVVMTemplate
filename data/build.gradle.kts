@@ -56,6 +56,10 @@ android {
 
     lint {
         baseline = file("lint-baseline.xml")
+        disable.addAll(listOf("JvmStaticProvidesInObjectDetector",
+            "FieldSiteTargetOnQualifierAnnotation",
+            "ModuleCompanionObjects",
+            "ModuleCompanionObjectsNotInModuleParent"))
     }
 
 }
