@@ -9,11 +9,7 @@ import app.web.drjackycv.domain.products.entity.Beer
 import app.web.drjackycv.domain.products.factory.ProductFactory
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineParams
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineUseCase
-import app.web.drjackycv.domain.products.usecase.GetBeersListParams
-import app.web.drjackycv.domain.products.usecase.GetBeersListUseCase
 import app.web.drjackycv.presentation.base.adapter.RecyclerItem
-import app.web.drjackycv.presentation.products.choose.ChoosePathType
-import app.web.drjackycv.presentation.products.productlist.CHOOSE_PATH_TYPE
 import app.web.drjackycv.presentation.products.productlist.ProductsListViewModel
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
@@ -41,9 +37,6 @@ class ProductsListViewModelTest {
 
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
-
-    @MockK
-    lateinit var getBeersListUseCase: GetBeersListUseCase
 
     @MockK
     lateinit var getBeersListByCoroutineUseCase: GetBeersListByCoroutineUseCase
@@ -77,17 +70,12 @@ class ProductsListViewModelTest {
 
             // When
             coEvery {
-                getBeersListUseCase.invoke(GetBeersListParams(anyString()))
                 getBeersListByCoroutineUseCase.invoke(GetBeersListByCoroutineParams(anyString()))
             }
                 .returns(flow)
 
             // Invoke
-            every {
-                savedStateHandle.get<ChoosePathType>(CHOOSE_PATH_TYPE) ?: ChoosePathType.COROUTINE
-            } returns ChoosePathType.COROUTINE
             viewModel = ProductsListViewModel(
-                getBeersUseCase = getBeersListUseCase,
                 getBeersListByCoroutineUseCase = getBeersListByCoroutineUseCase,
                 savedStateHandle = savedStateHandle
             )

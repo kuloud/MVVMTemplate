@@ -1,6 +1,5 @@
 package app.web.drjackycv.mvvmtemplate.di.module
 
-import app.web.drjackycv.data.products.datasource.ProductsPagingSource
 import app.web.drjackycv.data.products.datasource.ProductsPagingSourceByCoroutine
 import app.web.drjackycv.data.products.repository.ProductsListRepositoryImpl
 import app.web.drjackycv.domain.products.repository.ProductsListRepository
@@ -17,9 +16,8 @@ class RepositoryModule {
     @Provides
     @ViewModelScoped
     fun productsList(
-        pagingSource: ProductsPagingSource,
         pagingSourceByCoroutine: ProductsPagingSourceByCoroutine
     ): ProductsListRepository =
-        ProductsListRepositoryImpl(pagingSource, pagingSourceByCoroutine)
+        ProductsListRepositoryImpl(pagingSourceByCoroutine)
 
 }

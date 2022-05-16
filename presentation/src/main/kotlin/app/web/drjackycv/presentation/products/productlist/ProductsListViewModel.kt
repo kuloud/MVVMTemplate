@@ -9,7 +9,6 @@ import androidx.paging.cachedIn
 import androidx.paging.map
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineParams
 import app.web.drjackycv.domain.products.usecase.GetBeersListByCoroutineUseCase
-import app.web.drjackycv.domain.products.usecase.GetBeersListUseCase
 import app.web.drjackycv.presentation.base.adapter.RecyclerItem
 import app.web.drjackycv.presentation.base.viewmodel.BaseViewModel
 import app.web.drjackycv.presentation.products.entity.BeerMapper
@@ -24,7 +23,6 @@ const val CHOOSE_PATH_TYPE = "choosePathType"
 
 @HiltViewModel
 class ProductsListViewModel @Inject constructor(
-    private val getBeersUseCase: GetBeersListUseCase,
     private val getBeersListByCoroutineUseCase: GetBeersListByCoroutineUseCase,
     savedStateHandle: SavedStateHandle,
 ) : BaseViewModel() {

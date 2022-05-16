@@ -72,8 +72,6 @@ dependencies {
     implementation(Depends.Libraries.retrofit)
     implementation(Depends.Libraries.retrofit_adapter_rx)
     implementation(Depends.Libraries.logging_interceptor)
-    debugImplementation(Depends.Libraries.chucker)
-    releaseImplementation(Depends.Libraries.chucker_no_op)
     //other
     implementation(Depends.Libraries.timber)
     implementation(Depends.Libraries.material)
