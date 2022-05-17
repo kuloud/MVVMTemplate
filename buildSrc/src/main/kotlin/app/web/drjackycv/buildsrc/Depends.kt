@@ -15,7 +15,7 @@ object Depends {
         const val retrofit2Version = "2.9.0"
         const val okhttpLoggingVersion = "5.0.0-alpha.6"
         const val gsonVersion = "2.9.0"
-        const val lifecycleVersion = "2.4.0"
+        const val lifecycleVersion = "2.4.1"
         const val constraintLayoutVersion = "2.1.3"
         const val supportVersion = "1.4.1"
         const val materialVersion = "1.4.0"
@@ -41,7 +41,6 @@ object Depends {
         const val supportTestVersion = "1.4.0"
         const val testCoreVersion = "1.4.0"
         const val testExtJunitVersion = "1.1.3"
-        const val leakCanaryVersion = "2.8.1"
         const val coroutinesTestVersion = "1.6.0"
         const val mockkVersion = "1.12.2"
         const val archCoreTestingVersion = "2.1.0"
@@ -119,8 +118,6 @@ object Depends {
         const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
         const val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glideVersion}"
         const val lottie = "com.airbnb.android:lottie:${Versions.lottieVersion}"
-        const val leak_canary =
-            "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanaryVersion}"
         const val dataStore_preferences =
             "androidx.datastore:datastore-preferences:${Versions.dataStorePreferenceVersion}"
     }

@@ -39,7 +39,6 @@ Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20t
 - [Lottie](https://airbnb.design/lottie/) - Vector animation library
 - [Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html) - Alternative syntax to the Groovy DSL
 - [Navigation](https://developer.android.com/guide/navigation) - Navigate through the app
-- [LeakCanary](https://square.github.io/leakcanary/) - Memory leak detection
 - [StrictMode](https://developer.android.com/reference/android/os/StrictMode) - A developer tool which detects things you might be doing by accident
 - [Dark/Light Theme](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme) - Support dark/light themes
 - [DataStore](https://developer.android.com/topic/libraries/architecture/datastore) - Data storage solution that allows you to store key-value pairs or typed objects
@@ -63,7 +62,6 @@ Available workflows listed as follows:
 ## References 🧷
 
 - [The Punk API](https://punkapi.com/)
-- [Right or Left animation by Marco Martina on LottieFiles](https://lottiefiles.com/21141-right-or-left)
 - [Loading Beer animation by Hashim Irfan on LottieFiles](https://lottiefiles.com/30697-loading-beer-animation)
 
 ## Contributing 🤝

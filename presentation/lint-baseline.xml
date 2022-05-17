@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.2.0" type="baseline" client="gradle" dependencies="false" name="AGP (7.2.0)" variant="all" version="7.2.0">
+
+    <issue
+        id="LintError"
+        message="Unexpected failure during lint analysis of BaseViewModel.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;Message: &apos;java.util.List org.jetbrains.uast.UField.getAnnotations()&apos;&#xA;&#xA;The crash seems to involve the detector `dagger.lint.DaggerKotlinIssueDetector`.&#xA;You can try disabling it with something like this:&#xA;    android {&#xA;        lintOptions {&#xA;            disable &quot;JvmStaticProvidesInObjectDetector&quot;, &quot;FieldSiteTargetOnQualifierAnnotation&quot;, &quot;ModuleCompanionObjects&quot;, &quot;ModuleCompanionObjectsNotInModuleParent&quot;&#xA;        }&#xA;    }&#xA;&#xA;Stack: `NoSuchMethodError:DaggerKotlinIssueDetector$createUastHandler$1.visitField(DaggerKotlinIssueDetector.kt:166)←UElementVisitor$DispatchPsiVisitor.visitField(UElementVisitor.kt:659)←KotlinUField.accept(KotlinUField.kt:51)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←AbstractKotlinUClass.accept(AbstractKotlinUClass.kt:42)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←UFile$DefaultImpls.accept(UFile.kt:87)←KotlinUFile.accept(KotlinUFile.kt:14)`&#xA;&#xA;You can run with --stacktrace or set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout.">
+        <location
+            file="src/main/kotlin/app/web/drjackycv/presentation/base/viewmodel/BaseViewModel.kt"/>
+    </issue>
+
+    <issue
+        id="LintError"
+        message="Unexpected failure during lint analysis of GetBeersListByCoroutineUseCaseTest.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;Message: &apos;java.util.List org.jetbrains.uast.UField.getAnnotations()&apos;&#xA;&#xA;The crash seems to involve the detector `dagger.lint.DaggerKotlinIssueDetector`.&#xA;You can try disabling it with something like this:&#xA;    android {&#xA;        lintOptions {&#xA;            disable &quot;JvmStaticProvidesInObjectDetector&quot;, &quot;FieldSiteTargetOnQualifierAnnotation&quot;, &quot;ModuleCompanionObjects&quot;, &quot;ModuleCompanionObjectsNotInModuleParent&quot;&#xA;        }&#xA;    }&#xA;&#xA;Stack: `NoSuchMethodError:DaggerKotlinIssueDetector$createUastHandler$1.visitField(DaggerKotlinIssueDetector.kt:166)←UElementVisitor$DispatchPsiVisitor.visitField(UElementVisitor.kt:659)←KotlinUField.accept(KotlinUField.kt:51)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←AbstractKotlinUClass.accept(AbstractKotlinUClass.kt:42)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←UFile$DefaultImpls.accept(UFile.kt:87)←KotlinUFile.accept(KotlinUFile.kt:14)`&#xA;&#xA;You can run with --stacktrace or set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout.">
+        <location
+            file="../domain/src/test/java/app/web/drjackycv/domain/products/usecase/GetBeersListByCoroutineUseCaseTest.kt"/>
+    </issue>
+
+    <issue
+        id="LintError"
+        message="Unexpected failure during lint analysis of MainActivity.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;Message: &apos;java.util.List org.jetbrains.uast.UField.getAnnotations()&apos;&#xA;&#xA;The crash seems to involve the detector `dagger.lint.DaggerKotlinIssueDetector`.&#xA;You can try disabling it with something like this:&#xA;    android {&#xA;        lintOptions {&#xA;            disable &quot;JvmStaticProvidesInObjectDetector&quot;, &quot;FieldSiteTargetOnQualifierAnnotation&quot;, &quot;ModuleCompanionObjects&quot;, &quot;ModuleCompanionObjectsNotInModuleParent&quot;&#xA;        }&#xA;    }&#xA;&#xA;Stack: `NoSuchMethodError:DaggerKotlinIssueDetector$createUastHandler$1.visitField(DaggerKotlinIssueDetector.kt:166)←UElementVisitor$DispatchPsiVisitor.visitField(UElementVisitor.kt:659)←KotlinUField.accept(KotlinUField.kt:51)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←AbstractKotlinUClass.accept(AbstractKotlinUClass.kt:42)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←UFile$DefaultImpls.accept(UFile.kt:87)←KotlinUFile.accept(KotlinUFile.kt:14)`&#xA;&#xA;You can run with --stacktrace or set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout.">
+        <location
+            file="src/main/kotlin/app/web/drjackycv/presentation/main/MainActivity.kt"/>
+    </issue>
+
+    <issue
+        id="LintError"
+        message="Unexpected failure during lint analysis of ProductsListViewModelTest.kt (this is a bug in lint or one of the libraries it depends on)&#xA;&#xA;Message: &apos;java.util.List org.jetbrains.uast.UField.getAnnotations()&apos;&#xA;&#xA;The crash seems to involve the detector `dagger.lint.DaggerKotlinIssueDetector`.&#xA;You can try disabling it with something like this:&#xA;    android {&#xA;        lintOptions {&#xA;            disable &quot;JvmStaticProvidesInObjectDetector&quot;, &quot;FieldSiteTargetOnQualifierAnnotation&quot;, &quot;ModuleCompanionObjects&quot;, &quot;ModuleCompanionObjectsNotInModuleParent&quot;&#xA;        }&#xA;    }&#xA;&#xA;Stack: `NoSuchMethodError:DaggerKotlinIssueDetector$createUastHandler$1.visitField(DaggerKotlinIssueDetector.kt:166)←UElementVisitor$DispatchPsiVisitor.visitField(UElementVisitor.kt:659)←KotlinUField.accept(KotlinUField.kt:51)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←AbstractKotlinUClass.accept(AbstractKotlinUClass.kt:42)←ImplementationUtilsKt.acceptList(implementationUtils.kt:23)←UFile$DefaultImpls.accept(UFile.kt:87)←KotlinUFile.accept(KotlinUFile.kt:14)`&#xA;&#xA;You can run with --stacktrace or set environment variable `LINT_PRINT_STACKTRACE=true` to dump a full stacktrace to stdout.">
+        <location
+            file="src/test/java/app/web/drjackycv/presentation/products/viewmodel/ProductsListViewModelTest.kt"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `placeholder` is not used"
+        errorLine1="        placeholder(safePlaceholderDrawable)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/app/web/drjackycv/presentation/extension/ViewExtensions.kt"
+            line="39"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `error` is not used"
+        errorLine1="        error(safePlaceholderDrawable)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/app/web/drjackycv/presentation/extension/ViewExtensions.kt"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/detail_bg` with a theme that also paints a background (inferred theme is `@android:style/Theme.Holo`)"
+        errorLine1="    android:background=&quot;@color/detail_bg&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_product_detail.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.dark_red` appears to be unused"
+        errorLine1="    &lt;color name=&quot;dark_red&quot;>#B31A34&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.dark_gray` appears to be unused"
+        errorLine1="    &lt;color name=&quot;dark_gray&quot;>#757575&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.light_gray` appears to be unused"
+        errorLine1="    &lt;color name=&quot;light_gray&quot;>#B8B8B8&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.enter` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/enter.xml"
+            line="3"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.exit` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/exit.xml"
+            line="3"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.motion_duration_medium` appears to be unused"
+        errorLine1="    &lt;integer name=&quot;motion_duration_medium&quot;>225&lt;/integer>"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/motion.xml"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.pop_enter` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/pop_enter.xml"
+            line="3"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.pop_exit` appears to be unused"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/anim/pop_exit.xml"
+            line="3"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.rxjava` appears to be unused"
+        errorLine1="    &lt;string name=&quot;rxjava&quot;>RxJava&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.coroutine` appears to be unused"
+        errorLine1="    &lt;string name=&quot;coroutine&quot;>Coroutine&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+</issues>

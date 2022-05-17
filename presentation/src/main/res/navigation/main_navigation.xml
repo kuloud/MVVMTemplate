@@ -3,18 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home"
-    app:startDestination="@id/chooseFragment">
-
-    <fragment
-        android:id="@+id/chooseFragment"
-        android:name="app.web.drjackycv.presentation.products.choose.ChooseFragment"
-        tools:layout="@layout/fragment_choose">
-
-        <action
-            android:id="@+id/navigateToProductsListFragment"
-            app:destination="@id/productsListFragment" />
-
-    </fragment>
+    app:startDestination="@id/productsListFragment">
 
     <fragment
         android:id="@+id/productsListFragment"

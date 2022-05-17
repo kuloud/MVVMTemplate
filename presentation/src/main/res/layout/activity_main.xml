@@ -12,8 +12,7 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/main_navigation"
-        tools:context="app.web.drjackycv.presentation.main.MainActivity"
-        tools:layout="@layout/fragment_choose" />
+        tools:context="app.web.drjackycv.presentation.main.MainActivity" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/activityMainSwitchThemeFab"
