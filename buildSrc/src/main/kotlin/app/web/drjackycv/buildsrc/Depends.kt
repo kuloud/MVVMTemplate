@@ -18,7 +18,7 @@ object Depends {
         const val lifecycleVersion = "2.4.1"
         const val constraintLayoutVersion = "2.1.3"
         const val supportVersion = "1.4.1"
-        const val materialVersion = "1.4.0"
+        const val materialVersion = "1.6.0"
         const val coreKtxVersion = "1.7.0"
         const val navigationVersion = "2.5.0-alpha04"
         const val pagingVersion = "3.1.1"
